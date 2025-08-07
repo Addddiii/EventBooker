@@ -1,0 +1,39 @@
+.loginStyle{
+
+    -fx-background-image: url("club.PNG");
+
+    -fx-background-size: 100% 100%;
+
+    -fx-background-repeat: no-repeat;
+
+    -fx-background-position: center center;
+
+
+}
+.inputBox{
+    -fx-border-color: white;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-background-size: cover;
+    -fx-padding: 10px 10px 10px 10px;
+
+}
+
+.align{
+    -fx-alignment: center-right;
+
+}
+.Hbox{
+-fx-padding: 10px;
+-fx-background-color: #f0f0f0;
+-fx-border-color: #cccccc;
+-fx-border-width: 1px;
+-fx-border-radius: 5px;
+-fx-background-radius: 5px;
+}
+.label{
+-fx-font-size: 14px;
+-fx-text-fill: #333333;
+
+}

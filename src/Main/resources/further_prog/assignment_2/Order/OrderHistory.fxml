@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="further_prog.assignment_2.Order.OrderHistoryController">
+    <top>
+        <VBox style="-fx-background-color: #2196F3; -fx-padding: 20px;">
+            <HBox alignment="CENTER_LEFT" spacing="20.0">
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;" text="Order History" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Button fx:id="backToDashboardButton" onAction="#handleBackToDashboard" style="-fx-background-color: white; -fx-text-fill: #2196F3; -fx-font-weight: bold; -fx-padding: 10px 20px;" text="Back to Dashboard" />
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-padding: 10px 0 0 0;">
+                <Label style="-fx-font-size: 14px; -fx-text-fill: #E3F2FD;" text="View all your previous bookings in reverse chronological order" />
+                <Region HBox.hgrow="ALWAYS" />
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <ScrollPane fx:id="orderScrollPane" fitToWidth="true" style="-fx-background-color: #f8f9fa;">
+            <VBox fx:id="orderHistoryContainer" style="-fx-background-color: white; -fx-padding: 0;">
+                <!-- Order rows will be dynamically added here -->
+            </VBox>
+        </ScrollPane>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" style="-fx-background-color: #f0f0f0; -fx-padding: 15px;">
+            <Label fx:id="noOrdersLabel" style="-fx-font-size: 16px; -fx-text-fill: #666666;" text="Loading order history..." visible="false" />
+        </HBox>
+    </bottom>
+</BorderPane>
